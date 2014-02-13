@@ -32,6 +32,7 @@ Meteor.methods({
 				Meteor.setTimeout(function() {
 					future.return();
 				}, 5 * 1000);
+				future.wait();
 			}
 
 			var postId = Posts.insert(post);
